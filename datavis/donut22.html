@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chart created with amCharts | amCharts</title>
+		<meta name="description" content="chart created using amCharts live editor" />
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"innerRadius": "40%",
+					"colors": [
+						"#FF0F00",
+						"#FF6600",
+						"#FF9E01",
+						"#FCD202",
+						"#F8FF01",
+						"#B0DE09",
+						"#04D215",
+						"#0D8ECF",
+						"#0D52D1",
+						"#2A0CD0",
+						"#8A0CCF",
+						"#CD0D74",
+						"#754DEB",
+						"#DDDDDD",
+						"#999999",
+						"#333333",
+						"#000000",
+						"#57032A",
+						"#CA9726",
+						"#990000",
+						"#4B0C25"
+					],
+					"titleField": "category",
+					"valueField": "column-1",
+					"theme": "default",
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Cancer Biomedical Research",
+							"column-1": "28.10"
+						},
+						{
+							"category": "Cancer Survivorship Program",
+							"column-1": "17.20"
+						},
+						{
+							"category": "Mental Health and Suicide Prevention",
+							"column-1": "24.60"
+						},
+						{
+							"category": "Mental Health Programs",
+							"column-1": "30.00"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>
